@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define limite 10
+#define LIMITE 10
 
 
 int main () {
