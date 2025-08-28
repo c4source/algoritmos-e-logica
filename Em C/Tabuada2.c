@@ -1,16 +1,19 @@
 #include <stdio.h>
-# define LIMITE 10 
+#define LIMITE 10 
 
-    int main(){
-        int t, c = 0; 
-        printf("Numero da tabuada: ");    
-        scanf("%i", &t);
+int main() {
+    char resp = "n";
+    do {
+        int numero;
+        printf("Insira um número para a tabuada: ");
+        scanf("%d", &numero);
+        
+        int c = 0;
         do {
-            c++;
-            printf("%i x %i = %i\n", t, c, (t*c));
-            
-        }while ( c < LIMITE);     
+            printf("%d * %d = %d\n", numero, ++c, (numero * c));
+        } while (c < LIMITE);
         
-    return 0; 
-        
-    }
+        printf("Deseja ver outra tabuada? [S/n] ");
+        scanf("%c ", &resp);
+    } while (resp == 's');
+}
