@@ -5,7 +5,7 @@
 int main(){
     int mat[L][C];
         for (int i = 0; i < L; i++){
-            for (int j = 0; j < C; i++){
+            for (int j = 0; j < C; j++){
                 scanf("%d", &mat[i][j]);
             }
         }
