@@ -1,1 +1,30 @@
+import json 
+
+class Contatos():
+    def __init__(self, nome, email, cpf, telefone):
+        self.nome = nome
+        self.email = email 
+        self.cpf = cpf 
+        self.telefone = telefone
+        
+    def to_dict(self):
+        
+        return {
+            'nome':self.nome,
+            'email':self.email,
+            'cpf':self.cpf,
+            'telefone':self.telefone, 
+        }      
+
+contato_1 = Contatos("Gabriel", "gabrielhenriques4@gmail.com", "cpf", "telefone") 
+
+lista = []
+lista.append(contato_1.to_dict())
+print(lista)
+
+with open("dados.json", "w") as arquivo:
+    json.dump(lista,arquivo,indent=4)
+    
+
+
 
