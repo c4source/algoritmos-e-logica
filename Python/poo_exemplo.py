@@ -1,4 +1,4 @@
-
+# Exemplo de POO. 
 
 class ControleRemoto():
     
