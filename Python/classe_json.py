@@ -16,7 +16,7 @@ class Contatos():
             'telefone':self.telefone, 
         }      
 
-contato_1 = Contatos("Gabriel", "gabrielhenriques4@gmail.com", "cpf", "telefone") 
+contato_1 = Contatos("Gabriel", "gabrielhenriques69@gmai.com", "cpf", "telefone") 
 
 lista = []
 lista.append(contato_1.to_dict())
