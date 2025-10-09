@@ -1,8 +1,10 @@
 class Cliente():
+
     def __init__(self, nome, plano):
         self.nonme = nome
         self.plano = plano
         self.lista_planos = ["Basic", "Premium", "Master"]
+
         if plano in self.lista_planos:
             self.plano = plano
         else:
@@ -11,12 +13,14 @@ class Cliente():
 
 
     def mudar_plano(self, novo_plano):
+
         if novo_plano in self.lista_planos:
             self.plano = novo_plano
         else:
             print("Plano inválido")   
 
     def ver_filme(self, filme, plano_filme):
+
         if plano_filme == plano_filme:
             print(f"Ver filme {filme}")
 
