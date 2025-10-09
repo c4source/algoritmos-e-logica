@@ -1,7 +1,7 @@
 class Cliente():
 
     def __init__(self, nome, plano):
-        self.nonme = nome
+        self.nome = nome
         self.plano = plano
         self.lista_planos = ["Basic", "Premium", "Master"]
 
